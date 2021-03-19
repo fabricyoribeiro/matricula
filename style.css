@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+body {
+    background-color: #fff;
+    padding: 20px;
+}
+main {
+    width: 70em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    padding: 2em;  
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.39);
+}
+p {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+input {
+    width: 60em;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 95%);
+}
+#masc, #fem {
+    width: 3em;
+}
+#fem:hover, #masc:hover{
+    box-shadow: none;
+}
+#idade {
+    width: 3em;
+}
+#idade2 {
+    display: flex;
+    justify-content: space-between;
+    width: 11em;
+    margin: 1em;
+}
+#gen {
+    display: inline;
+    margin: 1em;
+}
+#res1 {
+    margin: 1em;
+}
+#res2 {
+    margin: 1em;
+    line-height: 2em;
+}
+#list {
+    text-align: center;
+}
+button{
+    display: inline;
+    justify-content: space-between;
+    background-color: #0071AD;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    border: rgb(89, 89, 206);
+    font-weight: bold;
+}
+button:hover {
+    transition: .2s;
+    background-color: #0070ad8f;
+}
+input:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+}
+
+/*versão android*/
+@media (max-width: 800px) {
+    main {
+        width: 33em;
+        padding: 1em;
+    }
+    input {
+        width: 23em;
+    }
+}
+
+@keyframes cima {
+    from {
+        opacity: 0;
+        transform: translateY(3em);
+    }to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-cima {
+    animation-name: cima;
+    animation-duration: 500ms;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrícula</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+</head>
+<body>
+    <main class="animate-cima">
+        <section>
+            <p>Digite os dados do aluno nos campos abaixo</p>
+            <div class="inputs">
+                <!--oninput="mascara(this)"-->
+                <p>Nome do aluno:  <input placeholder="Ex.: Fulano Cicrano de Sa"  type="text" name="" id="nome"></p> 
+                <p>CPF do aluno: <input placeholder="Ex.: 000.000.000-00"  type="text"  id="cpf"></p> 
+                <p>Endereço: <input type="text"  name="" id="end"></p>
+                <p>Nome da mãe: <input type="text" name="" id="mae"></p>
+                <div id="gen">Gênero:  <input type="radio" name="radsex" id="masc" checked> Masculino <input type="radio" name="radsex" id="fem"> Feminino</div><br>
+                <div id="idade2">Idade: <input type="number" name="" id="idade"></div>
+            </div>
+            <div>
+                <p>Para remover um aluno da lista, preencha o campo abaixo com o CPF do aluno e clique em "Remover matrícula"</p>
+                <p>CPF: <input placeholder="Ex.: 000.000.000-00" type="number" name="" id="cpfRemov"></p> 
+                <p>
+                    <button id="bot1"onclick="matricular()">Concluir matrícula</button>
+                    <button id="bot2" onclick="remover()">Remover matrícula</button>
+                </p>
+            </div>
+            <div id="res1">
+
+            </div>
+            <div id="list">
+
+            </div>
+            <div id="res2" >
+    
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    
+</body>
+</html>
